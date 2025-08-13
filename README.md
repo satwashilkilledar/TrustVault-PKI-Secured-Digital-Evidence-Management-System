@@ -1,4 +1,4 @@
-# TrustVault: PKI-Secured Digital Evidence Management System
+# TrustVault: Secured Digital Evidence Management System
 TrustVault is a secure, role-based Digital Evidence Management System designed for internal corporate investigations and forensic teams.  
 
 
