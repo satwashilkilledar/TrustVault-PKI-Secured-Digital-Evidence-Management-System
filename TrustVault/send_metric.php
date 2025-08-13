@@ -1,7 +1,7 @@
 <?php
 function sendToGrafana($metricName, $value, $tags = []) {
     $url = "https://graphite-prod-43-prod-ap-south-1.grafana.net/graphite/metrics";
-    $apiKey = "glc_eyJvIjoiMTUwMDI5NCIsIm4iOiJzdGFjay0xMzM3NDgzLWludGVncmF0aW9uLXNrIiwiayI6IjZGZTdYTEE2Z3A5TDVCMDZoN2U0c1dqMyIsIm0iOnsiciI6InByb2QtYXAtc291dGgtMSJ9fQ==";
+    $apiKey = "";
 
     $timestamp = intval(microtime(true) * 1000000000);  // nanoseconds
     $postData = [[
@@ -37,3 +37,4 @@ function sendToGrafana($metricName, $value, $tags = []) {
 
 // Example call:
 sendToGrafana("audit.approvals.count", 1, ["role=auditor", "source=php_dashboard"]);
+
